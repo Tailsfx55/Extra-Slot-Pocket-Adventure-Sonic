@@ -1,0 +1,7 @@
+//Name on Act Select
+function string ExtraChar.getCharacterName(u8 xtrachar)
+{
+    if (xtrachar == CHARACTER_SLOT124)
+        return "PAS"
+    return base.ExtraChar.getCharacterName(xtrachar)
+}
