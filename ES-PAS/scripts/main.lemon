@@ -7,3 +7,15 @@ include charscripts/?
 #endif
 
 #endif
+
+//initialize character 
+function void  Character.Initialization.shared(u8 character)
+{
+    base.Character.Initialization.shared(character)
+    if (character == CHARACTER_SONIC && global.xtrachar == CHARACTER_SLOT124)
+    {
+     char.hitbox_extends.y = 14   
+     char.hitbox.default.y = 14
+    }
+
+}

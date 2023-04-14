@@ -688,6 +688,16 @@ function void ExtraChar.onThreatCollision_char124()
 	D0 = 0xffffffff
 }
 
+global u8 PASPalette
+
+function string getExtraCharacterPaletteKey(u8 xtrachar)
+{
+    if (xtrachar == 124) 
+        return stringformat("PASPal_0%d", PASPalette)
+    
+    return base.getExtraCharacterPaletteKey(xtrachar)
+}
+
 function bool ExtraChar.checkStartJump_char124()
 {
 	u8 input_pressed = (char.character == CHARACTER_TAILS) ? control.tails.pressed : control.player1.pressed

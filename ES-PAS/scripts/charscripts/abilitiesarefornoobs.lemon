@@ -1,0 +1,22 @@
+//PAS doesn't peelout.
+function bool Character.updateSuperPeelout()
+{
+    if (global.xtrachar == 124)
+    {
+
+        return false
+    }
+    return base.Character.updateSuperPeelout()
+
+}
+
+//PAS will not use the instashield or drop dash.
+    function u32 Game.getSetting(u32 settingId)
+{
+    if (global.xtrachar == 124)
+    {
+        if (settingId == SETTING_DROPDASH || settingId == SETTING_INSTA_SHIELD)
+            return 0
+    }
+    return base.Game.getSetting(settingId)
+}

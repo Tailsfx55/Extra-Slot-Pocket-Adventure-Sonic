@@ -7,5 +7,28 @@
 		"URL": "http://sonic3air.org",
 		"ModVersion": "1.0.0.0",
 		"GameVersion": "19.12.15.0"
+	},
+	"Settings":
+	{
+		"Group1":
+		[
+			{
+				"InternalName": "PASPalette",
+				"DisplayName": "Character Palette",
+				"Variable": "PASPalette",
+				"DefaultValue": "0",	
+				"Category": "Palette",			
+				"Options":
+				{
+					"0x00": "Normal",
+					"0x01": "Roxy",
+					"0x02": "Andrew",
+					"0x03": "Santiago",
+					"0x04": "wip4",
+					"0x05": "wip5"
+				}
+			}
+		]
 	}
 }
+
